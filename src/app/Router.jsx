@@ -1,5 +1,4 @@
-import { authRoute } from 'feaure/auth';
 
 export const Router = () => {
-  return { authRoute };
+  return <div className="">{authRoute}</div>;
 };
