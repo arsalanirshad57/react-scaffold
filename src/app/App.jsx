@@ -1,5 +1,13 @@
+import { Toaster } from '@/shared/ui';
+import { QueryProvider } from './providers';
+
 function App({ children }) {
-  return children;
+  return (
+    <QueryProvider>
+      {children}
+      <Toaster />
+    </QueryProvider>
+  );
 }
 
 export default App;

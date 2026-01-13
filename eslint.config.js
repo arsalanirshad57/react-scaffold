@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import globals from 'globals';
 
 export default [
   js.configs.recommended,
@@ -10,7 +11,13 @@ export default [
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
+      parseOptions: {
+        ecmaVersion: {
+          jsx: true,
+        },
+      },
       globals: {
+        ...globals.browser,
         window: 'readonly',
         document: 'readonly',
       },
