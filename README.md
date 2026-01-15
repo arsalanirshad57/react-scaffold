@@ -65,13 +65,11 @@ Each top-level folder has **its own README** explaining rules and responsibiliti
 
 ## Installation (WIP)
 
-> CLI installation instructions will be added once the NPM package is published.
-
-For now:
+> CLI installation instructions.
 
 ```bash
-npm install
-npm run dev
+npx create-react-scaffold-cli
+
 ```
 
 ---
