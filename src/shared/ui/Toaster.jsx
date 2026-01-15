@@ -1,9 +1,9 @@
 import React from 'react';
-import { Toaster as HotToaster } from 'react-hot-toast';
+import { Toaster as Toasts } from 'react-hot-toast';
 
 export const Toaster = React.memo(() => {
   return (
-    <HotToaster
+    <Toasts
       position="top-right"
       toastOptions={{
         style: {
@@ -12,7 +12,6 @@ export const Toaster = React.memo(() => {
           background: '#fff',
           color: '#000',
         },
-
         error: {
           style: {
             background: '#fe8686',
@@ -20,7 +19,6 @@ export const Toaster = React.memo(() => {
             backdropFilter: 'blur(20px)',
           },
         },
-
         success: {
           style: {
             background: '#c2fcbf',

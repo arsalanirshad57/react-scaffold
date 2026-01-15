@@ -29,7 +29,7 @@ export default [
     },
     settings: {
       react: {
-        version: '19.2',
+        version: 'detect',
       },
     },
     rules: {
@@ -40,6 +40,9 @@ export default [
       'react/react-in-jsx-scope': 'off',
       'react/prop-types': 'off',
       'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn', // important for hooks
+      'no-undef': 'error', // ⚠ this one detects undefined variables
+      'no-unused-vars': ['warn', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
     },
   },
 ];

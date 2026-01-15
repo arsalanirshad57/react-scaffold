@@ -2122,3 +2122,17 @@ export const bgColorLookup = {
   success: 'bg-green-500',
   danger: 'bg-red-500',
 };
+
+export const fontFamilyLookup = {};
+
+export const fontFamilyMdLookup = Object.fromEntries(
+  Object.entries(fontFamilyLookup).map(([k, v]) => [k, `md:${v}`])
+);
+
+export const fontFamilyLgLookup = Object.fromEntries(
+  Object.entries(fontFamilyLookup).map(([k, v]) => [k, `lg:${v}`])
+);
+
+export const fontFamilyXlLookup = Object.fromEntries(
+  Object.entries(fontFamilyLookup).map(([k, v]) => [k, `xl:${v}`])
+);

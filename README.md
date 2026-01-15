@@ -1,16 +1,97 @@
-# React + Vite
+# React Feature‑First Scaffold
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose
 
-Currently, two official plugins are available:
+This repository is an **internal, opinionated React scaffold** designed for large-scale frontend applications. It enforces a **feature‑first architecture**, clear ownership boundaries, and predictable patterns so teams can scale safely without architectural drift.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This scaffold will later be distributed via an internal **NPM CLI** (similar to `create-react-app`) to bootstrap projects with best practices preconfigured.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Core Principles
 
-## Expanding the ESLint configuration
+- **Feature-first, not layer-first**
+- **Explicit boundaries** between app / features / shared
+- **Locality of logic** (keep things close to where they are used)
+- **Predictable imports** and naming conventions
+- **Low cognitive load** for new developers
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+### Runtime
+
+- **React 19** – UI layer
+- **Vite** – fast dev & build tooling
+
+### Styling
+
+- **Tailwind CSS** – utility-first styling
+- **tailwind-merge** – class conflict resolution
+- **clsx** – conditional class composition
+
+### Data & State
+
+- **@tanstack/react-query** – server-state management
+- **Axios** – HTTP client
+
+### UI Utilities
+
+- **Radix UI** – accessible headless components
+- **react-hot-toast** – notifications
+- **react-icons** – icon system
+
+### Code Quality
+
+- **ESLint** – linting with strict rules
+- **Prettier** – formatting
+- **Husky + lint-staged** – pre-commit enforcement
+
+---
+
+## High-Level Folder Structure
+
+```txt
+src/
+  app/        # Application bootstrap & global wiring
+  features/   # Business features (isolated, self-contained)
+  shared/     # Cross-feature reusable modules
+```
+
+Each top-level folder has **its own README** explaining rules and responsibilities.
+
+---
+
+## Installation (WIP)
+
+> CLI installation instructions will be added once the NPM package is published.
+
+For now:
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## Documentation Index
+
+- `src/app/README.md` – Application bootstrap & providers
+- `src/features/README.md` – Feature architecture rules
+- `src/shared/README.md` – Shared modules & reuse policy
+
+---
+
+## Philosophy
+
+> **Architecture is a product feature.**
+
+This scaffold exists to reduce decision fatigue, prevent architectural erosion, and help teams move faster with confidence.
+
+---
+
+## Ownership
+
+This scaffold is maintained internally and should be treated as a **living standard**. Changes must be intentional, documented, and agreed upon by the frontend team.
