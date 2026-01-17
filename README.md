@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository is an **internal, opinionated React scaffold** designed for large-scale frontend applications. It enforces a **feature‑first architecture**, clear ownership boundaries, and predictable patterns so teams can scale safely without architectural drift.
+This repository is an **opinionated React scaffold** designed for large-scale frontend applications. It enforces a **feature‑first architecture**, clear ownership boundaries, and predictable patterns so teams can scale safely without architectural drift.
 
 This scaffold will later be distributed via an internal **NPM CLI** (similar to `create-react-app`) to bootstrap projects with best practices preconfigured.
 
