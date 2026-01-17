@@ -82,6 +82,76 @@ npx create-react-scaffold-cli
 
 ---
 
+## Set Up
+
+### Install dependencies
+
+```bash
+npm i
+```
+
+### Run application
+
+---
+
+```
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Lint application
+
+```
+npm run lint
+```
+
+### Prettify code
+
+```
+npm run prettier
+```
+
+### Build application
+
+```
+npm run build
+```
+
+### Preview application
+
+```
+npm run preview
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+# Learning Resources
+
+## Tailwind CSS
+
+To learn more about `Tailwind CSS`, take a look at the following resources:
+
+- [Tailwind ](https://tailwindcss.com) - Tailwind documentation and related resources.
+
+## Framer Motion
+
+To learn more about `Framer Motion`, take a look at the following resources:
+
+- [Framer Motion](https://www.framer.com/motion) - Framer Motion documentation and related resources.
+
+## React Query
+
+To learn more about `TanStack Query`, take a look at the following resources:
+
+- [TanStack Query](https://tanstack.com/query/latest) - React Query documentation and related resources.
+
+## Nuqs
+
+To learn more about `Nuqs`, take a look at the following resources:
+
+- [Nuqs](https://nuqs.dev/) - React Query documentation and related resources.
+
 ## Philosophy
 
 > **Architecture is a product feature.**
